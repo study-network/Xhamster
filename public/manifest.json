@@ -1,0 +1,21 @@
+{
+  "name": "Learnxpw",
+  "short_name": "Learnxpw",
+  "description": "Learnxpw — a comprehensive online study platform for students and learners",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080b18",
+  "theme_color": "#080b18",
+  "icons": [
+    {
+      "src": "https://i.ibb.co/V8CbjrG/image.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.ibb.co/V8CbjrG/image.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

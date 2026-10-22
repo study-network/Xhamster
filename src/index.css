@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #080b18;
+  --foreground: #ffffff;
+  --muted: #111628;
+  --muted-foreground: #94a3b8;
+  --border: rgba(255, 255, 255, 0.1);
+  --radius: 0.75rem;
+}
+
+body {
+  margin: 0;
+  background-color: #080b18;
+  color: #ffffff;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Shimmer animation matching learnxpw.site skeleton shimmer */
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.04) 25%,
+    rgba(255, 255, 255, 0.12) 50%,
+    rgba(255, 255, 255, 0.04) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer-anim 1.8s infinite ease-in-out;
+}
+
+@keyframes skeleton-shimmer-anim {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Sidebar SVG & icon styling matching learnxpw.site */
+aside nav img {
+  filter: brightness(0) invert(1) !important;
+}
+
+aside nav svg,
+aside nav svg circle,
+aside nav svg line,
+aside nav svg path,
+aside nav svg polyline,
+aside nav svg rect,
+aside > div svg,
+aside > div svg circle,
+aside > div svg line,
+aside > div svg path,
+aside > div svg polyline,
+aside > div svg rect {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* Scrollbar hide utility for smooth carousels */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
